@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="icon" type="image/jpg" href="/image/logo_tayloy.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.iniciosesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    
+    <!-- Ventana Emergente -->
+    <div id="openModal" class="modalDialog">
+    <div >
+        <a href="#close" title="Cerrar" class="close"></a>
+        <form action="login.php" method="post" >
+            <div class="logoini">
+                <img src="image/logo_tayloy.jpg" alt="" width="75">
+            </div>
+            <h1>Inicio de Sesión</h1><br>
+            <div class="iconos">
+                <p>Iniciar sesión con
+                <i class='bx bxl-google' ></i>
+                 o 
+                <i class='bx bxl-facebook-circle' ></i>
+                </p>
+                <p style="color: red; font-weight: bold; text-align: center;">Usuario y/o contraseña incorrecta</p>
+            </div>
+            <label for="correo"> Usuario: </label>
+            <label class="fa-solid fa-user">
+            <input  type="text" id="correo" name="correo">
+            </label>
+
+            <label for="contraseña">Contraseña:</label>
+            <label class="fa-solid fa-lock">
+            <input  type="password" id="contraseña" name="contraseña">
+            </label>
+
+            <div class="remenber">
+                <div class="check">
+                    <input type="checkbox" name="Recordar">
+                    <a for="recordar">Recordar contraseña</a>
+                </div>
+                <div>
+                    <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+                </div>
+        </div>
+              
+            <input type="submit" class="btn-1" value="Iniciar Sesión">
+            
+            <div class="Register">
+                <hi>¿No tiene una cuenta?</hi>
+                <a href="CargaR.html">Regístrese</a>
+                </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

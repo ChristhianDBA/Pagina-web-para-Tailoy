@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; 
+    height: 100vh; 
+    background: url(image/fondologin.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(0.3rem);
+    margin: 0;
+}
+
+    form{
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        box-shadow: 0 0 10px;
+        border-radius: 10px;
+        background-color: white;
+
+
+    }
+    .logoini {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+   .bx {
+
+        font: 22px; ;
+        margin-right: 210px;
+    }
+    
+    .iconos{
+        margin: 10px 0;
+    }
+    .iconos i{
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        margin: 0 10px;
+        color: #9191bd;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        color:#00A160;
+        margin-bottom: 1px;
+        font-family: "Montserrat", sans-serif;    
+        font-weight: 800;
+    }
+     
+    label{
+        font-size: 20px;
+        text-align: left;
+        color: #0c0c0c;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    input{
+        border: 2px solid #00A160;
+        border-radius: 25px;
+        padding: 15px 95px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 1px;
+        color: black;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 8px 15px rgba(39, 39, 38, 0.062)
+        
+    }
+
+    .btn-1{
+
+        border: 2px solid white;
+        background-color: #00A160;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: 600;
+
+    }
+    
+    .btn-1:hover{
+        background-color:#00A160;
+    }
+    
+    .remenber{
+        display: flex;
+        justify-content:space-between;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center; 
+        flex: 1;
+        
+    }
+
+    .remenber a {
+        text-decoration: none; 
+        color: inherit; 
+        cursor: pointer; 
+    }
+
+    .Register {
+        margin-top: 20px;
+    }
+
+    
+    @media(max-width: 1024px){
+        body{
+            padding: 30px;
+    
+        }
+        form{
+            width: 100%;
+    
+        }
+        .remenber{
+            flex-direction: column;
+        }
+       
+        
+    }
+    
+    
+    .modalDialog {
+        position: fixed;
+        font-family: "Montserrat", sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 400ms ease-in;
+        
+    }
+     
+    .modalDialog:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 5% auto;
+        padding: 1px 1px 1px 1px;
+        border-radius: 10px;
+        background: #fff;
+    }
+    
+    .close {
+        background: #0d922a;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 12px;
+    }
+    
+    /* Mostrar la ventana emergente automáticamente al cargar la página */
+    .modalDialog {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    

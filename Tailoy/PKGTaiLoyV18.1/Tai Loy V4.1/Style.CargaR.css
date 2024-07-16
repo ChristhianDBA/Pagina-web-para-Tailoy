@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+.container {
+    display: flex;
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    min-height: 100vh; /* Establece la altura mínima de la vista al 100% del alto de la pantalla */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.loading-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.pulser {
+    width: 30px;
+    height: 30px;
+    background: #FFDC23;
+    border-radius: 100%;
+    position: relative;
+    opacity: 0; /* Inicialmente ocultar los puntitos */
+    transition-duration: 0.5s;
+    margin-right: 15px; /* Separación de 15px entre los puntitos */
+}
+
+body {
+    font-family: "Montserrat", "sans-serif";
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: #00A160;
+}
+
+.pulser:nth-child(1) {
+    animation: fadeIn 0.5s ease 0.3s forwards;
+}
+
+.pulser:nth-child(2) {
+    animation: fadeIn 0.5s ease 0.6s forwards;
+}
+
+.pulser:nth-child(3) {
+    animation: fadeIn 0.5s ease 0.9s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

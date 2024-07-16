@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" type="image/jpg" href="/image/logo_tayloy.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.registro.css">
+ </head>
+<body>
+    <div class="container-form">
+         <div class="informacion">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor crea una cuenta con tus datos.</p>
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-informacion-childs">
+                <h2>Crear un Usuario</h2>
+                <div class="iconos">
+                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+                <p>o</p>
+                <form class="form" action="Registro.php" method="POST">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Nombre Completo" name="NombreCompleto">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico" name="Correo">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña" name="Contraseña">
+                    </label>
+
+                    <div class="Nombres">
+                        <div class="Nacimiento">
+                            <h6>Fecha de Nacimiento*</h6>
+                        </div>
+                        <div class="Genero">
+                            <h6>Género*</h6>
+                        </div>
+                        <div class="Genero">
+                            <h6 style="color: #f8f8f8;">Género*</h6>
+                        </div>
+                    </div>
+                    <div class="two-Dats">
+                        <label class="fecha">
+                        <input type="date" name="FechaNacimiento">
+                        </label>
+                        <label class="genero">
+                            <select style="border: 0mm;" name="Genero">
+                                <option></option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>No especificado</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="Identification">
+                        <div class="table">
+                            <label>
+                                <i class='bx bx-id-card'></i>
+                                <select style="border: 0mm;" name="TipoDoc">
+                                    <option>DNI</option>
+                                    <option>Pasaporte</option>
+                                    <option>Carné extr.</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="doc">
+                            <label class="docu">
+                            <input type="text" placeholder="N° doc." name="NumDoc">
+                            </label>
+                        </div>
+                    </div>
+                    <label class="tele">
+                        <input type="text" placeholder="N° teléfono" name="Telefono">
+                    </label>
+
+                    <div class="TerminosYC">
+                        <div class="check">
+                            <input type="checkbox" name="Terminos">He leído términos y condiciones.
+                        </div>
+                       
+                    </div>
+                    <div class="Register">
+                         <input type="submit" value="Registrar" name="Registro">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+ padding: 5px;
+ margin: 0;
+ font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+.container-form {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    height: 90%; /* Ajusta la altura */
+    width: 90%; /* Ajusta el ancho */
+    max-width: 1200px; /* Limita el ancho máximo */
+    transition: all 1s ease;
+}
+
+.informacion{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #FFDC23;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+}
+.info-childs{
+    width: 100%;
+    padding: 0 20px;
+}
+.info-childs h2{
+    font-size: 3rem;
+    color: #333;
+}
+.info-childs p {
+    font-size: 1.5rem;
+    margin: 20px 20px;
+    color: #555;
+}
+.form-informacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-informacion-child{
+    padding: 10px 30px;
+}
+.form-informacion h2{
+    font-size: 2rem;
+    color: #333;
+}
+.form-informacion-child p {
+    color: #555;
+}
+.iconos{
+    margin: 15px 0;
+}
+.iconos i{
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+}
+.iconos i:hover{
+    background-color: #0F9637;
+    color: #fff;
+}
+.form{
+    margin: 30px 0 0 0 ;    
+}
+.form label {
+    display: flex;
+    height: 50px; /* Fija la altura de los labels */
+    align-items: center;
+    margin-bottom: 10px; /* Aumenta el espacio entre los labels */
+    border-radius: 20px;
+    padding: 1px 5px; /* Aumenta el padding */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: medium; /* Aumenta el tamaño de la fuente */
+}
+
+.form label input {
+    width: 100%;
+    padding: 9px; /* Aumenta el padding */
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+
+}
+.form label i{
+    color: #a7a7a7;
+} 
+.two-Dats{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    padding-bottom: 5px;
+}
+.fecha{
+    width: 50%;
+}
+.genero{
+    width: 50%;
+}
+.Nombres{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.Identification{
+    width: 100%;
+    display: flex;
+    padding-bottom: 5px;
+}
+.table label{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.doc label{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+label select{
+    width: 230px;
+}
+.doc {
+    width: 360px;
+    padding: 0px;
+}
+.table{
+    width: 150px;
+    height:px;
+    padding: 0px;
+} 
+.tele{
+    width: 505px;
+    padding-top: 5px;
+}
+.Register input {
+    background-color: #0F9637;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 40px; /* Aumenta el padding */
+    cursor: pointer;
+    margin-top: 20px; /* Aumenta el espacio entre los inputs y el botón */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.Register input:hover{
+    background-color:#FFDC23;
+    color: black;
+}
